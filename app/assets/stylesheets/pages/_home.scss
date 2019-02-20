@@ -1,1 +1,104 @@
 // Specific CSS for your home-page
+
+ul {
+  list-style-type: none;
+}
+
+
+.wrapper-home {
+  background: rgba(220,220,220,1);
+
+  padding: 100px;
+
+  height: 100vh;
+}
+
+.container-home {
+  background: white;
+  border: 1px solid rgba(150,150,150,1);
+  box-shadow: 1px 1px rgba(100,100,100,1);
+
+  padding: 50px;
+}
+
+.todo-title {
+  font-size: 30px;
+  color: rgba(80,80,80,1);
+  margin-bottom: 30px;
+}
+
+.todo-item {
+  margin-bottom: 10px;
+}
+
+.todo-item-div {
+  padding: 10px 30px;
+
+  .name {
+    padding-right: 50px;
+    padding-left: 50px;
+    color: rgba(120,120,120,1);
+  }
+
+  .priority {
+    font-weight: lighter;
+  }
+
+  .priority:before {
+    content: "(";
+  }
+
+  .priority:after {
+    content: ")";
+  }
+}
+
+.todo-done {
+  background: rgba(165, 255, 183,1);
+
+  .name {
+    color: green;
+  }
+}
+
+.todo-notdone {
+  background: rgba(255,200,200,1);
+
+  .name {
+    color: red;
+  }
+}
+
+.fa-trash-alt {
+  margin-left: 50px;
+  color: rgba(80,80,80,1);
+  font-size: 30px;
+
+  &:hover {
+    cursor: pointer;
+    color: red;
+    transition: 300ms ease;
+  }
+}
+
+.todo-add-title {
+  font-size: 25px;
+  color: rgba(100,100,100,1);
+  border-bottom: 1px solid rgba(220,220,220,1);
+}
+
+.add-todo-input {
+  border: 2px solid rgba(200,200,255,1);
+}
+
+.add-todo-select {
+  -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+  -moz-appearance: none; /* Remove estilo padrão do FireFox */
+  appearance: none; /* Remove estilo padrão do FireFox*/
+  background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+  background-position: 218px center;  /*Posição da imagem do background*/
+  width: 250px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+  height:30px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+  border:1px solid #ddd;
+
+}

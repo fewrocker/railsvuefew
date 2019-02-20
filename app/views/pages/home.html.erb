@@ -1,2 +1,13 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- Check: <i class="far fa-check-square"></i> -->
+<!-- Uncheck: <i class="far fa-square"></i> -->
+
+<div class="wrapper-home">
+  <div class="container-home">
+
+
+    <%= tag.div id: :boards, data: { todos: @todos.to_json } %>
+
+
+  </div>
+</div>
+
